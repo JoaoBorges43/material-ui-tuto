@@ -1,19 +1,23 @@
 import React from 'react';
-import { Grid } from 'material-ui';
-import LeftPane from './LeftPane';
-import RightPane from './RightPane';
+import { Grid, Paper, Typography } from 'material-ui';
 
 const styles = {
   Paper: { padding: 20, marginTop: 10, marginBotton: 10 }
 }
 
-export default props => (
+export default ({ exercises }) => (
   <Grid container>
     <Grid item sm>
-      <LeftPane styles={styles}/>
+      <Paper style={styles.Paper}>
+              <Typography>
+                a
+              </Typography>
+      </Paper>
     </Grid>
     <Grid item sm>
-      <RightPane styles={styles}/>
+      <Paper style={styles.Paper}>
+        Right Pane
+      </Paper>
     </Grid>
   </Grid>
 );
